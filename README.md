@@ -50,7 +50,7 @@ basic styling is enough.
          python manage.py runserver
    ```
 ## Project Tree
-![alt text](media/project_tree.jpg)
+![alt text](media/project_tree.JPG)
 
 ## Database
 Default database sqlite3
