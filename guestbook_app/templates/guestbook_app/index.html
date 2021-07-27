@@ -109,7 +109,7 @@
 		$(window).on("load", function(){
 			$.ajax({
                 type: 'GET',
-                url: "/api/messages/",
+                url: "/api/message/",
                 success: function(response){
 
 	                let new_messages = "";
@@ -160,7 +160,7 @@
             e.preventDefault();
 			$.ajax({
                 type: 'POST',
-                url: "/api/messages/",
+                url: "/api/message/",
                 data: $("#message-form").serialize(),
                 success: function(response){
                     let new_message = '<div class="message"> ' +
