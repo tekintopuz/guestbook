@@ -109,7 +109,7 @@
 		$(window).on("load", function(){
 			$.ajax({
                 type: 'GET',
-                url: "/api/messages/",
+                url: "/api/message/",
                 success: function(response){
 
 	                let new_messages = "";
@@ -148,7 +148,7 @@
 				error: function(response){
                     //console.log(response);
 					Swal.fire({
-                        icon: response.status,
+                        icon: "error",
                         html: "Message posts could not be got!",
 						timer: 1000
 					});
@@ -160,7 +160,7 @@
             e.preventDefault();
 			$.ajax({
                 type: 'POST',
-                url: "/api/messages/",
+                url: "/api/message/",
                 data: $("#message-form").serialize(),
                 success: function(response){
                     let new_message = '<div class="message"> ' +
@@ -186,14 +186,14 @@
 									    '</div>';
                         $("#message-posts").prepend(new_message);
                         Swal.fire({
-	                        html:response.message,
+	                        html:"error",
 	                        icon:"success",
 	                        timer: 1000
                         });
                 },
 				error: function(response){
 					Swal.fire({
-                        icon: response.status,
+                        icon: "error",
                         html: "Gerekli alanları doldurunuz!",
 						timer: 1000
 					});

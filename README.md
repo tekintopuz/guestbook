@@ -44,8 +44,14 @@ basic styling is enough.
    ```python
          python -m pip install --upgrade pip
    ```
-   
-5. run project
+5. makemigratre
+   Create necessary tables for Django and guestbook_app
+   ```python
+         python manage.py makemigrations
+         python manage.py migrate
+   ```
+      
+6. run project
    ```python
          python manage.py runserver
    ```
