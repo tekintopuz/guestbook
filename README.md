@@ -59,7 +59,7 @@ Default database sqlite3
 There is only one template file for create new post and show posted messages. It is under
 the guestbook_app and in templates folder
 
-##Static
+## Static
 There is no static files, I used bootstrap, jquery and swal2 cdn for index template.
 
 ## Test
