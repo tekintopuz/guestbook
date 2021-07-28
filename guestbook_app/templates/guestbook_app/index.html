@@ -140,7 +140,7 @@
 					//console.log(new_messages);
                     $("#message-posts").html(new_messages);
                     Swal.fire({
-                            html:response.message,
+                            html:"All posts fetched successfully'",
                             icon:"success",
 	                        timer: 1000
                     });
@@ -186,7 +186,7 @@
 									    '</div>';
                         $("#message-posts").prepend(new_message);
                         Swal.fire({
-	                        html:"error",
+	                        html:"New message is created successfully!",
 	                        icon:"success",
 	                        timer: 1000
                         });
@@ -194,7 +194,7 @@
 				error: function(response){
 					Swal.fire({
                         icon: "error",
-                        html: "Gerekli alanları doldurunuz!",
+                        html: "Please fill all the filds!",
 						timer: 1000
 					});
 				}
